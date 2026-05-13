@@ -69,9 +69,9 @@ const Hero: React.FC = () => {
               <line x1="118" y1="255" x2="158" y2="258" stroke="rgba(200,129,58,0.3)" strokeWidth="0.8" strokeDasharray="3,3"/>
               <line x1="107" y1="76" x2="148" y2="80" stroke="rgba(200,129,58,0.3)" strokeWidth="0.8" strokeDasharray="3,3"/>
 
-              <text fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="8" x="60" y="160">arándanos · uva</text>
-              <text fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="8" x="62" y="275"> uva · palta</text>
-              <text fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="8" x="66" y="93"> mango · uva</text>
+              <text fill="rgba(255,255,255,0.25)" fontFamily="monospace" fontSize="8" x="60" y="160">arándanos · uva</text>
+              <text fill="rgba(255,255,255,0.25)" fontFamily="monospace" fontSize="8" x="62" y="275"> uva · palta</text>
+              <text fill="rgba(255,255,255,0.25)" fontFamily="monospace" fontSize="8" x="66" y="93"> mango · uva</text>
             </svg>
           </div>
         </div>
