@@ -113,7 +113,7 @@
 
 .porter-highlight {
   position: absolute;
-  bottom: 30px;
+  bottom: -80px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(74,124,89,0.15);

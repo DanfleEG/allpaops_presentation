@@ -5,6 +5,7 @@
 
 import React, { useEffect } from 'react';
 import { Navbar } from './components/Navbar';
+import { ProgressBar } from './components/ProgressBar';
 import { useNavigation } from './hooks/useNavigation';
 
 // Slides
@@ -24,7 +25,7 @@ import Closing from './slides/closing/Closing';
 import './styles/global.css';
 
 export default function App() {
-  const { activeSection, scrollToSection } = useNavigation();
+  const { activeSection, scrollToSection, progress } = useNavigation();
 
   useEffect(() => {
     // Scroll reveal observer
@@ -43,6 +44,7 @@ export default function App() {
   return (
     <div className="relative">
       <Navbar activeSection={activeSection} onNavigate={scrollToSection} />
+      <ProgressBar progress={progress} />
       
       <main>
         <Hero />

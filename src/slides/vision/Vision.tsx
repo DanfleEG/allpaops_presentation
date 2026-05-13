@@ -27,34 +27,37 @@ const Vision: React.FC = () => {
             </div>
           </div>
           <div className="network-visual reveal reveal-delay-2">
-            <svg width="100%" height="400" viewBox="0 0 400 400">
-              <line x1="200" y1="200" x2="200" y2="60" stroke="rgba(74,124,89,0.25)" strokeWidth="1" strokeDasharray="4,4">
+            <svg width="100%" height="560" viewBox="0 0 560 560">
+              <line x1="280" y1="280" x2="280" y2="84" stroke="rgba(74,124,89,0.25)" strokeWidth="1" strokeDasharray="4,4">
                 <animate attributeName="stroke-opacity" values="0.25;0.6;0.25" dur="3s" repeatCount="indefinite"/>
               </line>
-              <line x1="200" y1="200" x2="200" y2="340" stroke="rgba(74,124,89,0.25)" strokeWidth="1" strokeDasharray="4,4">
+              <line x1="280" y1="280" x2="280" y2="476" stroke="rgba(74,124,89,0.25)" strokeWidth="1" strokeDasharray="4,4">
                 <animate attributeName="stroke-opacity" values="0.25;0.6;0.25" dur="3.5s" repeatCount="indefinite"/>
               </line>
-              <line x1="200" y1="200" x2="60" y2="200" stroke="rgba(74,124,89,0.25)" strokeWidth="1" strokeDasharray="4,4">
+              <line x1="280" y1="280" x2="84" y2="280" stroke="rgba(74,124,89,0.25)" strokeWidth="1" strokeDasharray="4,4">
                 <animate attributeName="stroke-opacity" values="0.25;0.6;0.25" dur="2.8s" repeatCount="indefinite"/>
               </line>
-              <line x1="200" y1="200" x2="340" y2="200" stroke="rgba(74,124,89,0.25)" strokeWidth="1" strokeDasharray="4,4">
+              <line x1="280" y1="280" x2="476" y2="280" stroke="rgba(74,124,89,0.25)" strokeWidth="1" strokeDasharray="4,4">
                 <animate attributeName="stroke-opacity" values="0.25;0.6;0.25" dur="4s" repeatCount="indefinite"/>
               </line>
               
-              <circle cx="200" cy="200" r="42" fill="rgba(74,124,89,0.2)" stroke="rgba(74,124,89,0.5)" strokeWidth="1.5">
-                <animate attributeName="r" values="42;46;42" dur="4s" repeatCount="indefinite"/>
+              <circle cx="280" cy="280" r="58" fill="rgba(74,124,89,0.2)" stroke="rgba(74,124,89,0.5)" strokeWidth="1.5">
+                <animate attributeName="r" values="58;64;58" dur="4s" repeatCount="indefinite"/>
               </circle>
-              <text x="200" y="196" textAnchor="middle" fill="#6aaf78" fontFamily="Syne,sans-serif" fontSize="11" fontWeight="700">AllpaOps</text>
-              <text x="200" y="212" textAnchor="middle" fill="rgba(255,255,255,0.4)" fontFamily="monospace" fontSize="8">Platform Core</text>
+              <text x="280" y="274" textAnchor="middle" fill="#6aaf78" fontFamily="Syne,sans-serif" fontSize="14" fontWeight="700">AllpaOps</text>
+              <text x="280" y="296" textAnchor="middle" fill="rgba(255,255,255,0.4)" fontFamily="monospace" fontSize="10">Platform Core</text>
 
-              <circle cx="200" cy="52" r="26" fill="rgba(74,124,89,0.12)" stroke="rgba(74,124,89,0.25)" strokeWidth="1"/>
-              <text x="200" y="48" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="monospace" fontSize="8">GIS</text>
-              <circle cx="200" cy="348" r="26" fill="rgba(74,124,89,0.12)" stroke="rgba(74,124,89,0.25)" strokeWidth="1"/>
-              <text x="200" y="344" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="monospace" fontSize="8">ERP</text>
-              <circle cx="52" cy="200" r="26" fill="rgba(74,124,89,0.12)" stroke="rgba(74,124,89,0.25)" strokeWidth="1"/>
-              <text x="52" y="196" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="monospace" fontSize="8">Tareo</text>
-              <circle cx="348" cy="200" r="26" fill="rgba(74,124,89,0.12)" stroke="rgba(74,124,89,0.25)" strokeWidth="1"/>
-              <text x="348" y="196" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="monospace" fontSize="8">AWS</text>
+              <circle cx="280" cy="72" r="36" fill="rgba(74,124,89,0.12)" stroke="rgba(74,124,89,0.25)" strokeWidth="1"/>
+              <text x="280" y="76" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="monospace" fontSize="10">GIS</text>
+              
+              <circle cx="280" cy="488" r="36" fill="rgba(74,124,89,0.12)" stroke="rgba(74,124,89,0.25)" strokeWidth="1"/>
+              <text x="280" y="492" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="monospace" fontSize="10">ERP</text>
+              
+              <circle cx="72" cy="280" r="36" fill="rgba(74,124,89,0.12)" stroke="rgba(74,124,89,0.25)" strokeWidth="1"/>
+              <text x="72" y="284" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="monospace" fontSize="10">Tareo</text>
+              
+              <circle cx="488" cy="280" r="36" fill="rgba(74,124,89,0.12)" stroke="rgba(74,124,89,0.25)" strokeWidth="1"/>
+              <text x="488" y="284" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="monospace" fontSize="10">AWS</text>
             </svg>
           </div>
         </div>
