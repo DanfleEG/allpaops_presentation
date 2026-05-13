@@ -1,0 +1,83 @@
+#s10 {
+  background: #050a06;
+}
+
+.chain-flow {
+  margin-top: 64px;
+  position: relative;
+}
+
+.chain-layer {
+  margin-bottom: 32px;
+}
+
+.chain-layer-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.25);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.chain-row {
+  display: flex; gap: 12px; align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .chain-row { flex-wrap: wrap; }
+  .chain-arrow { display: none; }
+}
+
+.chain-node {
+  flex: 1;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: all 0.35s;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+
+.chain-node::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--sage), var(--leaf));
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+
+.chain-node:hover::before { transform: scaleX(1); }
+
+.chain-node:hover {
+  border-color: rgba(74,124,89,0.4);
+  background: rgba(74,124,89,0.06);
+  transform: translateY(-4px);
+}
+
+.chain-node-icon { font-size: 1.4rem; margin-bottom: 10px; display: block; }
+
+.chain-node-name {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.chain-node-desc {
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.3);
+  line-height: 1.4;
+}
+
+.chain-arrow {
+  display: flex; align-items: center;
+  color: rgba(74,124,89,0.4);
+  font-size: 1rem;
+}

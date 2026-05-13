@@ -1,0 +1,114 @@
+#s3 {
+  background: var(--ink);
+}
+
+.s3-bg {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 80% 50%, rgba(180,40,30,0.08) 0%, transparent 60%);
+}
+
+.impact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-top: 64px;
+}
+
+@media (max-width: 1024px) {
+  .impact-layout { grid-template-columns: 1fr; }
+}
+
+.kpi-stack {
+  display: flex; flex-direction: column; gap: 16px;
+}
+
+.kpi-item {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s;
+}
+
+.kpi-item:hover {
+  border-color: rgba(220,60,40,0.3);
+  transform: translateX(4px);
+}
+
+.kpi-bar-wrap {
+  flex: 1;
+}
+
+.kpi-label {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 8px;
+}
+
+.kpi-bar {
+  height: 4px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.kpi-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--amber), var(--gold));
+  width: 0%;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kpi-fill.red {
+  background: linear-gradient(90deg, #d43020, #e84030);
+}
+
+.kpi-num {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--amber);
+  min-width: 50px;
+  text-align: right;
+}
+
+.kpi-num.red { color: #e84030; }
+
+.compliance-badges {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-top: 32px;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  padding: 6px 12px;
+  border-radius: 2px;
+  border: 1px solid;
+  text-transform: uppercase;
+}
+
+.badge.warning {
+  color: #e8a84a;
+  border-color: rgba(232,168,74,0.4);
+  background: rgba(232,168,74,0.08);
+}
+
+.badge.danger {
+  color: #e84030;
+  border-color: rgba(232,64,48,0.4);
+  background: rgba(232,64,48,0.08);
+}
+
+.chart-area {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 24px;
+  height: 340px;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AllpaOps Storytelling",
+  "description": "Plataforma de storytelling corporativo para AllpaOps, enfocada en inteligencia operativa agrícola con navegación fluida y arquitectura modular.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

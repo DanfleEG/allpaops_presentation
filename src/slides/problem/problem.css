@@ -1,0 +1,136 @@
+#s2 {
+  background: #0a0f08;
+}
+
+.flow-diagram {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.flow-node {
+  flex: 0 0 auto;
+  width: 160px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 24px 16px;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.flow-node:hover {
+  transform: translateY(-4px);
+}
+
+.flow-node.danger {
+  border-color: rgba(220,60,40,0.4);
+  background: rgba(220,60,40,0.05);
+}
+
+.flow-node.danger:hover {
+  border-color: rgba(220,60,40,0.7);
+}
+
+.flow-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.flow-label {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.flow-sub {
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.4;
+}
+
+.flow-arrow {
+  flex: 0 0 auto;
+  width: 40px;
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.2);
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.flow-arrow.danger-arrow {
+  color: rgba(220,60,40,0.6);
+}
+
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 64px;
+}
+
+@media (max-width: 768px) {
+  .pain-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.pain-item {
+  border-left: 2px solid rgba(200,129,58,0.3);
+  padding-left: 20px;
+}
+
+.pain-metric {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--amber);
+}
+
+.pain-text {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.section-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+
+.section-eyebrow::after {
+  content: '';
+  flex: 1;
+  max-width: 60px;
+  height: 1px;
+  background: rgba(200,129,58,0.4);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+}
+
+.section-body {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.5);
+  max-width: 600px;
+}

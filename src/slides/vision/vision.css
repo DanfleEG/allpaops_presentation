@@ -1,0 +1,30 @@
+#s6 {
+  background: #040c06;
+}
+
+.vision-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 64px;
+}
+
+@media (max-width: 1024px) {
+  .vision-layout { grid-template-columns: 1fr; }
+}
+
+.vision-quote {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.6);
+  border-left: 3px solid var(--sage);
+  padding-left: 24px;
+  margin-top: 24px;
+}
+
+.network-visual {
+  position: relative;
+  height: 400px;
+}

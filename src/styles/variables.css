@@ -1,0 +1,20 @@
+:root {
+  --soil: #1a1208;
+  --earth: #2d1f0e;
+  --clay: #3d2b10;
+  --amber: #c8813a;
+  --gold: #e8a84a;
+  --sage: #4a7c59;
+  --moss: #2d5a3d;
+  --leaf: #6aaf78;
+  --sky: #7ab8d4;
+  --frost: #a8d4e8;
+  --cream: #f5ede0;
+  --mist: #e8f0e4;
+  --white: #fafaf8;
+  --ink: #0d0d0b;
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --amber-glow: rgba(200, 129, 58, 0.15);
+  --green-glow: rgba(74, 124, 89, 0.2);
+}

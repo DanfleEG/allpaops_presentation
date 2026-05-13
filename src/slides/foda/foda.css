@@ -1,0 +1,100 @@
+#s8 {
+  background: #060a07;
+}
+
+.foda-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  margin-top: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .foda-grid { grid-template-columns: 1fr; }
+}
+
+.foda-cell {
+  padding: 40px 44px;
+  position: relative;
+  min-height: 280px;
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.foda-cell:hover {
+  filter: brightness(1.08);
+}
+
+.foda-cell.f {
+  background: linear-gradient(135deg, rgba(74,124,89,0.18) 0%, rgba(74,124,89,0.08) 100%);
+  border-bottom: 1px solid rgba(74,124,89,0.15);
+  border-right: 1px solid rgba(74,124,89,0.15);
+}
+
+.foda-cell.o {
+  background: linear-gradient(135deg, rgba(122,184,212,0.1) 0%, rgba(122,184,212,0.05) 100%);
+  border-bottom: 1px solid rgba(122,184,212,0.1);
+  border-left: 1px solid rgba(122,184,212,0.1);
+}
+
+.foda-cell.d {
+  background: linear-gradient(135deg, rgba(200,129,58,0.12) 0%, rgba(200,129,58,0.05) 100%);
+  border-top: 1px solid rgba(200,129,58,0.12);
+  border-right: 1px solid rgba(200,129,58,0.12);
+}
+
+.foda-cell.a {
+  background: linear-gradient(135deg, rgba(220,60,40,0.12) 0%, rgba(220,60,40,0.05) 100%);
+  border-top: 1px solid rgba(220,60,40,0.12);
+  border-left: 1px solid rgba(220,60,40,0.12);
+}
+
+.foda-header {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 28px;
+}
+
+.foda-letter {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.foda-cell.f .foda-letter { color: var(--leaf); }
+.foda-cell.o .foda-letter { color: var(--sky); }
+.foda-cell.d .foda-letter { color: var(--amber); }
+.foda-cell.a .foda-letter { color: #e84030; }
+
+.foda-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.05em;
+}
+
+.foda-items {
+  display: flex; flex-direction: column; gap: 10px;
+}
+
+.foda-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.45;
+}
+
+.foda-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.foda-cell.f .foda-dot { background: var(--leaf); }
+.foda-cell.o .foda-dot { background: var(--sky); }
+.foda-cell.d .foda-dot { background: var(--amber); }
+.foda-cell.a .foda-dot { background: #e84030; }
